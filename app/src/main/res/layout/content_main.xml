@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rohankanoo.project_1.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:background="#dddddd">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="176dp"
+        android:elevation="10dp"
+        android:background="#dddddd"
+        android:id="@+id/RL1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="7dp"
+            android:paddingLeft="5dp"
+            android:gravity="bottom"
+            app:centered="true"
+            app:fillColor="#ffffff"
+            app:pageColor="#00999999"
+            app:snap="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL1"
+        android:layout_margin="6dp"
+        android:elevation="5dp"
+        android:background="#ffffff"
+        android:id="@+id/nav">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textColor="#888888"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:shadowDx="2.2"
+            android:shadowDy="2.2"
+            android:shadowRadius="2.2"
+            android:shadowColor="#444444"
+            android:id="@+id/menu"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Faucets"
+            android:textSize="15sp"
+            android:layout_below="@+id/menu"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/cardlayout"
+            android:textColor="#ffffff"
+            android:id="@+id/faucets"/>
+
+        <Button
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Sink"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/menu"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/cardlayout"
+            android:textColor="#ffffff"
+            android:id="@+id/sink"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Bath \nAccessories"
+            android:textSize="15sp"
+            android:layout_below="@+id/faucets"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/cardlayout"
+            android:textColor="#ffffff"
+            android:id="@+id/bath"/>
+
+        <Button
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Cistern and \nSeat Cover"
+            android:textSize="15sp"
+            android:layout_below="@+id/sink"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/cardlayout"
+            android:textColor="#ffffff"
+            android:id="@+id/cistern"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="PTMT Products"
+            android:textSize="15sp"
+            android:layout_below="@+id/bath"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/cardlayout"
+            android:textColor="#ffffff"
+            android:id="@+id/ptmt"/>
+
+        <Button
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Showers"
+            android:textSize="15sp"
+            android:layout_below="@id/cistern"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/cardlayout"
+            android:textColor="#ffffff"
+            android:id="@+id/showers"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:elevation="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="#888888"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="12dp"
+            android:shadowDx="2.2"
+            android:shadowDy="2.2"
+            android:shadowRadius="2.2"
+            android:shadowColor="#444444"
+            android:id="@+id/contact"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/contact"
+            android:src="@drawable/phone"
+            android:id="@+id/phone_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="+91 7376747707"
+            android:layout_toRightOf="@+id/phone_icon"
+            android:layout_below="@+id/contact"
+            android:id="@+id/phone_text"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_below="@+id/phone_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/seperator1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/seperator1"
+            android:src="@drawable/phone_2"
+            android:id="@+id/phone2_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="+91 9876543210"
+            android:layout_toRightOf="@+id/phone_icon"
+            android:layout_below="@+id/seperator1"
+            android:id="@+id/phone2_text"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_below="@+id/phone2_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/seperator2"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/seperator2"
+            android:src="@drawable/email"
+            android:id="@+id/mail_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="navnirmansjth@gmail.com"
+            android:layout_toRightOf="@+id/mail_icon"
+            android:layout_below="@+id/seperator2"
+            android:id="@+id/mail_text"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    </ScrollView>

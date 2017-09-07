@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rohankanoo.project_1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Project"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="Shree Jaju Trading House"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Home"
+            android:theme="@style/AppThemeMain"/>
+        <activity
+            android:name=".faucets"
+            android:label="Faucets Catalog"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".sink"
+            android:label="Sink Catalog"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".bath"
+            android:label="Bath Catalog"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".cistern"
+            android:label="Cistern Catalog"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".ptmt"
+            android:label="PTMT Catalog"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".showers"
+            android:label="Showers Catalog"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:label="Shopping Cart"/>
+
+        <activity
+            android:name=".ProductDetailsFaucets"
+            android:label="Faucets"
+            android:parentActivityName=".faucets"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name=".ProductDetailsSink"
+            android:label="Sink"
+            android:parentActivityName=".sink"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".ProductDetailsBath"
+            android:label="Bath"
+            android:parentActivityName=".bath"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".ProductDetailsCistern"
+            android:label="Cistern"
+            android:parentActivityName=".cistern"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".ProductDetailsPtmt"
+            android:label="PTMT"
+            android:parentActivityName=".ptmt"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".ProductDetailsShowers"
+            android:label="Showers"
+            android:parentActivityName=".showers"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".CheckoutActivity"
+            android:label="Checkout"
+            android:parentActivityName=".ShoppingCartActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+
+        <activity
+            android:name=".ImageDialog"
+            android:theme="@style/myDialogTheme"/>
+    </application>
+
+</manifest>

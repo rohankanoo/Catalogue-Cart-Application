@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:id="@+id/LinearLayoutItem">
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutDetails"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/ImageViewItem"
+            android:layout_height="95dp"
+            android:layout_width="95dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/TextViewItem"
+            android:textSize="25dip"
+            android:text="Book Title"
+            android:textColor="#000000"
+            android:maxWidth="230dp"
+            android:layout_toRightOf="@+id/ImageViewItem"/>
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:layout_marginRight="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:id="@+id/productCheckBox"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutQuantity"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/productCheckBox">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textSize="18dip"
+            android:textColor="#000000"
+            android:layout_marginRight="5dp"
+            android:id="@+id/textViewQuantity"/>
+    </LinearLayout>
+</LinearLayout>
